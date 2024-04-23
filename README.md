@@ -1,5 +1,7 @@
 ## GERADOR DE PDF E E-MAIL
 
+by: [@v.ii.n.i](https://instagram.com/v.ii.n.i)
+
     Web-app made with JS, Express, Nodejs and jsPDF. It's PDFs generator, also send message for e-mail. 
 
 <img src="./public/image_example.jpg" width='100%'>
