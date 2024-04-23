@@ -1,3 +1,4 @@
 /node_modules/*
 /pdfs/*
 package-lock.json
+my_config.js

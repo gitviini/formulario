@@ -1,12 +1,11 @@
 //CONFIGURAÇÕES
 //poderia ter usado um .json, mas deu preguiça
-//utiliza conta da microsoft, que oferece serviço gratuito de smtp
 const CONFIG = {
-    host: 'smtp.office365.com',
-    port: 587,
+    host: '<host do serviço smtp>',
+    port: '<porta do serviço smtp>',
     auth:{
-        user:'teste.deprograminhas@gmail.com',
-        pass:'senha54321'
+        user:'<email@dominio.com>',
+        pass:'<password do email>'
     },
 }
 
