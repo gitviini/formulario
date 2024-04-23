@@ -1,0 +1,130 @@
+:root {
+  --roxo: #554994;
+  --rosa: #F675A8;
+  --salmao: #F29393;
+  --salmao-claro: #FFCCB3;
+  --color: #345;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+  color: var(--color);
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+html, body, main {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+header {
+  max-width: 600px;
+  width: 80%;
+  height: 50px;
+  border-radius: 10px;
+  background-color: var(--salmao-claro);
+  border: 1px solid var(--roxo);
+}
+header nav {
+  width: 100%;
+  height: 100%;
+}
+header nav ul {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  padding: 20px;
+  align-items: center;
+  list-style: none;
+  gap: 10px;
+}
+header nav ul #block, header nav ul #block::before {
+  display: block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: var(--rosa);
+  border-radius: 5px;
+}
+header nav ul #block {
+  transform: translateY(2.5px);
+}
+header nav ul #block::before {
+  transform: translateX(-5px) translateY(-5px);
+  background-color: var(--roxo);
+}
+
+form {
+  display: flex;
+  max-width: 600px;
+  width: 80%;
+  height: auto;
+  padding: 20px;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--salmao-claro);
+  border-radius: 10px;
+  border: 1px solid var(--roxo);
+  border-bottom: 5px solid var(--roxo);
+  border-right: 5px solid var(--roxo);
+  gap: 20px;
+}
+form input, form button, form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--roxo);
+  outline: none;
+  resize: vertical;
+  min-height: 40px;
+  max-height: 100px;
+  cursor: pointer;
+}
+form input:valid {
+  background-color: #fff;
+}
+form button {
+  background-color: var(--rosa);
+  color: #fff;
+  border: 1px solid var(--roxo);
+  border-bottom: 5px solid var(--roxo);
+  border-right: 5px solid var(--roxo);
+  transition: 0.05s;
+}
+form button:hover {
+  background-color: #e06597;
+}
+form button:active {
+  background-color: #c44c7c;
+  border-bottom: 1px solid var(--roxo);
+  border-right: 1px solid var(--roxo);
+  margin: 4px 0 0 4px;
+}
+form button.click {
+  min-height: 0;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  border: none;
+}
+form ::-moz-placeholder {
+  color: rgba(85, 73, 148, 0.8);
+}
+form ::placeholder {
+  color: rgba(85, 73, 148, 0.8);
+}/*# sourceMappingURL=style.css.map */

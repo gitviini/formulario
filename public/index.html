@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+    <link rel="shortcut icon" href="icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main>
+        <header>
+            <nav>
+                <ul>
+                    <li id="block"></li>
+                    <li id="logo">forms</li>
+                </ul>
+            </nav>
+        </header>
+        <form action="/" method="POST">
+            <input type="text" name='nome' placeholder="nome*" minlength="4" required>
+            <input type="email" name="email" placeholder="e-mail*" minlength="11" required>
+            <input type="" name="numero" placeholder="telefone*" minlength="9" required>
+            <textarea name="motivo" id="motivo" cols="" rows="" placeholder="Diga porque quer participar ..." maxlength="120"></textarea>
+            <button>enviar</button>
+        </form>
+        <div id="resp"></div>
+    </main>
+</body>
+</html>
