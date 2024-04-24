@@ -12,7 +12,7 @@ function enviar(filename='',to_email='',PATH=''){
         }
     })
     let msg = {
-        'from':`Camila <${CONFIG.auth.user}>`,
+        'from':`Vinicius Gabriel <${CONFIG.auth.user}>`,
         'to':to_email,
         'text':'Atividade de recuperação',
         'subject':'PDF do forms',   
